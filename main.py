@@ -20,7 +20,12 @@ def retrieveListContents():
         print i
 
 
+#this does as it should do and returns a 200
+r = requests.get("http://localhost")
+#print r.status_code
+MessageList.append(r)
 
-
-get_statuscode(URLS_TO_CHECK)
 retrieveListContents()
+
+#get_statuscode(URLS_TO_CHECK)
+#retrieveListContents()
