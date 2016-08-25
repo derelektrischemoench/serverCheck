@@ -6,8 +6,13 @@ MessageList = []
 def get_statuscode(URLS_TO_CHECK):
         for URL in URLS_TO_CHECK:
             try:
-                r = str(requests.get(URL))
+                #r = str(requests.get(URL))
                 #print r
+                y = requests.get(URL)
+
+                print y.status_code
+
+                """
                 if r == "<Response [200]>":
                     MessageList.append("Everything is working as expected")
 
@@ -22,6 +27,8 @@ def get_statuscode(URLS_TO_CHECK):
 
                 else:
                     pass
+
+                    """
 
             except requests.exceptions.RequestException as e:
                 print e
