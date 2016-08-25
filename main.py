@@ -1,40 +1,34 @@
 import requests
+URLS_TO_CHECK = ["http://www.google.de", "http://www.laut.de", "http://www.physiotool.schtyle.com", "http://www.zack.schnapptack.de"]
+MessageList = []
 
+#returns the http- response code of the targeted url
+def get_statuscode(URLS_TO_CHECK):
+        for URL in URLS_TO_CHECK:
+            try:
+                r = str(requests.get(URL))
+                #print r
+                if r == "<Response [200]>":
+                    MessageList.append("Everything is working as expected")
 
-# create a list of urls
-class UrlList(object):
-    instances = []
+                elif r == "<Response [401]>":
+                    MessageList.append("Authentication required")
 
-    def __init__(self, name):
-        self.name = name
-        UrlList.instances.append(self)
-        print "a new URLlist named " + name + " has been created"
+                elif r == "<Response [404]>":
+                    MessageList.append("Resource not available")
 
-# return all list instances
-def yield_list_instances():
-    for item in UrlList.instances:
-        return item.name
+                elif r == "<Response [308]>":
+                    MessageList.append("Permanent redirect")
 
-# returns the http- response code of the targeted url
-def get_statuscode(self,target_url):
-    r = requests.get(target_url)
-    print r
+                else:
+                    pass
 
-    if r == "<Response [401]>":
-        return "auth reqd"
-
-    else:
-        return "nope"
-
-
-def add_url_to_list(url, list_name):
-    list_name.append(url)
-    return
+            except requests.exceptions.RequestException as e:
+                print e
 
 
 
+get_statuscode(URLS_TO_CHECK)
 
-list1 = UrlList("asdasd")
-print(yield_list_instances())
-
-
+for x in MessageList:
+    print x
