@@ -6,36 +6,21 @@ MessageList = []
 def get_statuscode(URLS_TO_CHECK):
         for URL in URLS_TO_CHECK:
             try:
-                #r = str(requests.get(URL))
-                #print r
                 y = requests.get(URL)
 
-                print y.status_code
-
-                """
-                if r == "<Response [200]>":
-                    MessageList.append("Everything is working as expected")
-
-                elif r == "<Response [401]>":
-                    MessageList.append("Authentication required")
-
-                elif r == "<Response [404]>":
-                    MessageList.append("Resource not available")
-
-                elif r == "<Response [308]>":
-                    MessageList.append("Permanent redirect")
-
-                else:
-                    pass
-
-                    """
+                MessageList.append(URL)
+                MessageList.append(y.status_code)
 
             except requests.exceptions.RequestException as e:
-                print e
+                return e
+
+
+def retrieveListContents():
+    for i in MessageList:
+        print i
+
 
 
 
 get_statuscode(URLS_TO_CHECK)
-
-for x in MessageList:
-    print x
+retrieveListContents()
