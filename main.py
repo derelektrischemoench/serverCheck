@@ -1,12 +1,14 @@
 import requests
 URLS_TO_CHECK = [
-    "http://www.google.de", "http://www.laut.de",
-    "http://www.physiotool.schtyle.com",
-    "http://www.zack.schnapptack.de"
+    "http://127.0.0.1:8124",
+    "http://127.0.0.1:8125",
+    "http://127.0.0.1s:8126",
+    "http://127.0.0.1:8136",
 ]
 
 
 MessageList = []
+exceptionList = []
 
 #returns the http- response code of the targeted url
 def get_statuscode(URLS_TO_CHECK):
@@ -18,21 +20,21 @@ def get_statuscode(URLS_TO_CHECK):
                 MessageList.append(URL)
                 MessageList.append(y.status_code)
 
+            #this is propbably verbose since we will get a response no matter what (is that so?)
             except requests.exceptions.RequestException as e:
-                return e
+                exceptionList.append(e)
 
 
 def retrieveListContents():
-    for i in MessageList:
+
+    for i in exceptionList:
         print i
 
+    #return the url plus the corresponding response code
+    for j in MessageList:
+        print j
 
-#this does as it should do and returns a 200
-r = requests.get("http://localhost:8124")
-#print r.status_code
-MessageList.append(r)
 
+
+get_statuscode(URLS_TO_CHECK)
 retrieveListContents()
-
-#get_statuscode(URLS_TO_CHECK)
-#retrieveListContents()

@@ -20,3 +20,13 @@ http2.createServer(function (req,res) {
 }).listen(8125,"127.0.0.1");
 
 console.log("Server2 running @ localhost:8125");
+
+var http3=require('http');
+
+http3.createServer(function (req,res) {
+    res.writeHead(500,{'Content-Type':'text/html'});
+    res.write('hello world3');
+    res.end();
+}).listen(8126,"127.0.0.1");
+
+console.log("Server3 running @ localhost:8126");
