@@ -1,3 +1,0 @@
-needs to check servers for their response status.
-if the returned status isn't 200 the domain and the error code need
-to be stored and need to be made available to a jenkins instance running on a build machine somewhere
