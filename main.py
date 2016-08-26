@@ -1,11 +1,18 @@
 import requests
-URLS_TO_CHECK = ["http://www.google.de", "http://www.laut.de", "http://www.physiotool.schtyle.com", "http://www.zack.schnapptack.de"]
+URLS_TO_CHECK = [
+    "http://www.google.de", "http://www.laut.de",
+    "http://www.physiotool.schtyle.com",
+    "http://www.zack.schnapptack.de"
+]
+
+
 MessageList = []
 
 #returns the http- response code of the targeted url
 def get_statuscode(URLS_TO_CHECK):
         for URL in URLS_TO_CHECK:
             try:
+                # returns the statuscode for an url
                 y = requests.get(URL)
 
                 MessageList.append(URL)
@@ -21,7 +28,7 @@ def retrieveListContents():
 
 
 #this does as it should do and returns a 200
-r = requests.get("http://localhost")
+r = requests.get("http://localhost:8124")
 #print r.status_code
 MessageList.append(r)
 
