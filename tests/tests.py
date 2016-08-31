@@ -1,13 +1,9 @@
 import unittest
 import mock
+# despite pycharm highlighting this as incorrect this actually
+# works and is necessary
 from servercheck.servercheck import *
-import servercheck
-import os
 
-
-
-# TODO: this is still very hacky, better approach: use a setup.py; take a example from featuremonkey
-# After that the module is globally available and can be called from anywhere .. or at least it should be
 
 class TestCase(unittest.TestCase):
     def test_google_url_is_reachable(self):
@@ -28,7 +24,6 @@ class TestCase(unittest.TestCase):
 
         mock_get.assert_called_once_with("http://www.schnappfuck.de/")
         self.assertEquals(1, mock_get.call_count)
-
 
 
 if __name__ == '__main__':
