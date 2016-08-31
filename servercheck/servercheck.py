@@ -1,8 +1,4 @@
-import sys
 import requests
-import os
-
-
 
 def url_is_reachable(url_to_check):
     try:
@@ -12,4 +8,3 @@ def url_is_reachable(url_to_check):
         return False
     except requests.HTTPError:
         return False
-
