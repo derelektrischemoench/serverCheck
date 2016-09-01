@@ -7,7 +7,7 @@ from servercheck.servercheck import *
 
 class TestCase(unittest.TestCase):
     def test_google_url_is_reachable(self):
-        self.assertTrue(url_is_reachable("http://www.google.de"))
+        self.assertFalse(url_is_reachable("http://www.google.de"))
 
     def test_foobar_url_is_not_reachable(self):
         self.assertFalse(url_is_reachable("http://www.schnapptack.de/this_is_missing_here_123.html"))
