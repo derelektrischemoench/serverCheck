@@ -1,6 +1,6 @@
 .idea/
 venv/
 project definition:
-.pyc
+*.pyc
 tests/tests.pyc
 notes/
