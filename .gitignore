@@ -4,3 +4,5 @@ project definition:
 *.pyc
 tests/tests.pyc
 notes/
+
+servercheck.egg-info/
