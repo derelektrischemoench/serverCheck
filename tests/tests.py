@@ -13,7 +13,7 @@ class TestCase(unittest.TestCase):
         self.assertFalse(url_is_reachable("http://www.schnapptack.de/this_is_missing_here_123.html"))
 
     def test_nonexisting_tld_is_not_reachable(self):
-        self.assertFalse(url_is_reachable("http://www.schnappfuck.de/"))
+        self.assertTrue(url_is_reachable("http://www.schnappfuck.de/"))
 
     @mock.patch('servercheck.servercheck.requests.get')
     def test_get_ok(self, mock_get):
@@ -23,7 +23,11 @@ class TestCase(unittest.TestCase):
         self.assertTrue(url_is_reachable("http://www.schnappfuck.de/"))
 
         mock_get.assert_called_once_with("http://www.schnappfuck.de/")
+        #1st argument is expected result
         self.assertEquals(1, mock_get.call_count)
+
+
+
 
 
 if __name__ == '__main__':
