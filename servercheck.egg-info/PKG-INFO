@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: servercheck
+Version: 0.1.dev0
+Summary: A utility to monitor the status of websites
+Home-page: git@github.com:derelektrischemoench/serverCheck.git
+Author: Chris Bader
+Author-email: chris.bader@schnapptack.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
