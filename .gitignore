@@ -3,3 +3,4 @@ venv/
 project definition:
 .pyc
 tests/tests.pyc
+notes/
