@@ -6,6 +6,4 @@ python:
 
 install: "pip install mock==2.0.0 requests==2.11.1"
 
-  #- python setup.py develop
-
-script: ls & pwd & python tests/tests.py
+script: python setup.py install && python tests/tests.py
