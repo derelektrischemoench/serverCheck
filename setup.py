@@ -1,5 +1,3 @@
-#! /usr/bin/venv python
-
 import os
 from setuptools import setup
 
@@ -10,6 +8,10 @@ setup(
     url='git@github.com:derelektrischemoench/serverCheck.git',
     author='Chris Bader',
     author_email='chris.bader@schnapptack.de',
+<<<<<<< HEAD
     packages=['Mock', 'servercheck', 'tests'],
+=======
+    packages=['servercheck', 'tests', 'requests'],
+>>>>>>> f07e30b7aca65bba70da8f085f52b562e42b7565
     install_requires=['unittest2'],
 )
