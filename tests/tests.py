@@ -1,11 +1,15 @@
 import unittest
 import mock
+import sys
 # despite pycharm highlighting this as incorrect this actually
 # works and is necessary
 from servercheck.servercheck import url_is_reachable
 
 
 class TestCase(unittest.TestCase):
+
+    print (sys.path)
+
     def test_google_url_is_reachable(self):
         self.assertFalse(url_is_reachable("http://www.google.de"))
 
