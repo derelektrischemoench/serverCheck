@@ -8,9 +8,6 @@ from servercheck.servercheck import *
 
 
 
-
-
-
 class TestCase(unittest.TestCase):
 
     def test_google_url_is_reachable(self):
