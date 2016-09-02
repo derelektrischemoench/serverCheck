@@ -1,7 +1,7 @@
 import os, sys
 import unittest
 import mock
-import servercheck.servercheck as servercheck
+import servercheck
 #changed imports
 
 class TestCase(unittest.TestCase):
