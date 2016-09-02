@@ -1,11 +1,13 @@
+import os, sys
+import servercheck
 import unittest
 import mock
-import sys
-
-print (sys.path)
 # despite pycharm highlighting this as incorrect this actually
 # works and is necessary
-from servercheck.servercheck import url_is_reachable
+from servercheck.servercheck import *
+
+
+
 
 
 class TestCase(unittest.TestCase):
