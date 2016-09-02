@@ -3,4 +3,8 @@ python:
   - "2.6"
   - "2.7"
 
-script: tests/tests.py
+#install: -> is this really required?
+install:
+  - python setup.py develop
+#run tests:
+script: python tests/tests.py
