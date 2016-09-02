@@ -5,11 +5,11 @@ from setuptools import setup
 
 setup(
     name='servercheck',
-    version='0.1dev',
+    version='0.1.dev0',
     description='A utility to monitor the status of websites',
     url='git@github.com:derelektrischemoench/serverCheck.git',
     author='Chris Bader',
     author_email='chris.bader@schnapptack.de',
-    packages=['servercheck', 'tests'],
+    packages=['Mock', 'servercheck', 'tests'],
     install_requires=['unittest2'],
 )
