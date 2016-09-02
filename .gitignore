@@ -4,5 +4,6 @@ project definition:
 *.pyc
 tests/tests.pyc
 notes/
-
+htmlcov
 servercheck.egg-info/
+.coverage
