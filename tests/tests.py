@@ -2,7 +2,7 @@ import unittest
 import mock
 # despite pycharm highlighting this as incorrect this actually
 # works and is necessary
-from servercheck.servercheck import *
+from servercheck.servercheck import url_is_reachable
 
 
 class TestCase(unittest.TestCase):
