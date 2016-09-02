@@ -1,8 +1,2 @@
 mock==2.0.0
 requests==2.11.1
-<<<<<<< HEAD
--e git+git@github.com:derelektrischemoench/serverCheck.git@a0fc57542b4c8aa92f9b9ea9567cd0b0234b4aea#egg=servercheck
-traceback2==1.4.0
-unittest2==1.1.0
-=======
->>>>>>> f07e30b7aca65bba70da8f085f52b562e42b7565
