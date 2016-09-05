@@ -29,7 +29,7 @@ class TestCase(unittest.TestCase):
 #mock test for branch coverage
 class TestCase2(unittest.TestCase2):
 
-    def test_branch_coverage:
+    def test_branch_coverage(self):
         a = 2
         if a>2:
             print "1st hit"
