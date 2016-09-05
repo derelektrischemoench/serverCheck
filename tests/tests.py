@@ -4,7 +4,6 @@ import mock
 import servercheck.servercheck as servercheck
 #changed imports
 
-"""
 class TestCase(unittest.TestCase):
 
     def test_google_url_is_reachable(self):
@@ -39,7 +38,7 @@ class TestCase2(unittest.TestCase2):
         else:
             print "3rd hit, a is > 3"
 
-"""
+
 
 #kick off coverage test:
 coverage run --branch TestCase2
