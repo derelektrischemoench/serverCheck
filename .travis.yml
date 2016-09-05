@@ -7,3 +7,6 @@ python:
 install: "pip install mock==2.0.0 requests==2.11.1"
 
 script: python setup.py install && python tests/tests.py
+
+#kick off coverage test:
+coverage run --branch tests/tests.py
