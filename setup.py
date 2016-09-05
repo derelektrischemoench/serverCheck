@@ -8,5 +8,5 @@ setup(
     url='git@github.com:derelektrischemoench/serverCheck.git',
     author='Chris Bader',
     author_email='chris.bader@schnapptack.de',
-    packages=['servercheck'],
+    packages=['servercheck', 'requests', 'mock'],
 )
