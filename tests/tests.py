@@ -42,7 +42,6 @@ class TestCase2(unittest.TestCase2):
 
 
 #kick off coverage test:
-coverage run --branch TestCase2
 
 
 if __name__ == '__main__':
