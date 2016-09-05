@@ -2,7 +2,7 @@ import os, sys
 import unittest
 import coverage
 import mock
-import servercheck.servercheck as servercheck
+from servercheck import servercheck
 #changed imports
 
 class TestCase(unittest.TestCase):
