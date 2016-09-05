@@ -29,14 +29,14 @@ class TestCase(unittest.TestCase):
 #mock test for branch coverage
 class TestCase2(unittest.TestCase2):
 
-    def test_branch_coverage
-    a = 2
-    if a>2:
-        print "1st hit"
-    elif a==2:
-        print: "2nd hit, a exactly 2"
-    else:
-        print: "3rd hit, a is > 3"
+    def test_branch_coverage:
+        a = 2
+        if a>2:
+            print "1st hit"
+        elif a==2:
+            print: "2nd hit, a exactly 2"
+        else:
+            print: "3rd hit, a is > 3"
 
 
 #kick off coverage test:
