@@ -8,5 +8,5 @@ setup(
     url='git@github.com:derelektrischemoench/serverCheck.git',
     author='Chris Bader',
     author_email='chris.bader@schnapptack.de',
-    packages=['servercheck', 'requests', 'mock' 'pylint', 'pep8', 'coverage', 'unittest-xml-reporting'],
+    packages=['pylint', 'pep8', 'coverage', 'sphinx'],
 )
