@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import unittest
-from serverCheck.tests.tests import *
+from tests.tests import *
 
 def suite():
     return unittest.TestSuite([
