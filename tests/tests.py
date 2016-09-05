@@ -28,7 +28,7 @@ class TestCase(unittest.TestCase):
         self.assertEquals(1, mock_get.call_count)
 
 #mock test for branch coverage
-class TestCase2(unittest.TestCase2):
+class TestCase2(unittest.TestCase):
 
     def test_branch_coverage(self):
         a = 2
