@@ -1,5 +1,6 @@
 import os, sys
 import unittest
+import coverage
 import mock
 import servercheck.servercheck as servercheck
 #changed imports
