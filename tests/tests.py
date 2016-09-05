@@ -27,20 +27,6 @@ class TestCase(unittest.TestCase):
         #1st argument is expected result
         self.assertEquals(1, mock_get.call_count)
 
-#mock test for branch coverage
-class TestCase2(unittest.TestCase):
-
-    def test_branch_coverage(self):
-        a = 2
-        if a>2:
-            print "1st hit"
-        elif a==2:
-            print "2nd hit, a exactly 2"
-        else:
-            print "3rd hit, a is > 3"
-
-
-
 #kick off coverage test:
 
 
