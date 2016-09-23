@@ -12,6 +12,4 @@ after_success:
   - codecov
 
 branches:
-    - travis_dev
     - travis_stable
-    
