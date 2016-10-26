@@ -6,7 +6,7 @@ python:
 
 install: "pip install mock==2.0.0 requests==2.11.1 codecov"
 
-script: python setup.py install && python tests/tests.py
+script: python setup.py install && python tests/tests.py && nosetests
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
